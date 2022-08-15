@@ -1,0 +1,269 @@
+.product{
+    padding-top: 120px;
+    padding-bottom: 168px;
+}
+
+.product-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-content{
+    max-width: 584px;
+}
+
+.product-heading{
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 39px;
+    line-height: 157%;
+    color: #424242;
+}
+
+.product-heading + *{
+    margin-top: 10px;
+}
+
+.product-sub-heading{
+    font-family: "Georgia", serif;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 157%;
+    color: #01996D;
+}
+
+.product-sub-heading + *{
+    margin-top: 20px;
+}
+
+.product-text{
+    color: #484848;
+    font-size: 20px;
+    line-height: 144.5%;
+    max-width: 535px;
+}
+
+.product-text + *{
+    margin-top: 40px;
+}
+
+.product-btn{
+    display: flex;
+    color: white;
+}
+
+.girl-image{
+    z-index: 0;
+}
+
+.images-container{
+    margin-right: 86px;
+    padding-left: 60px;
+    padding-bottom: 74px;
+    position: relative;
+}
+
+.product-card{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+}
+
+.card{
+    width: 296px;
+    box-shadow: 0 3.62249px 18.1125px rgba(165, 165, 165, 0.25);
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 22px 50px 30px 61px;
+    align-items: center;
+}
+
+.card-title{
+    position: relative;
+    font-size: 14.5px;
+    line-height: 157%;
+    font-weight: 600;
+    padding-bottom: 7px;
+    margin-bottom: 13px;
+}
+
+.card-title::after{
+    position: absolute;
+    content: '';
+    height: 0.75px;
+    background-color: black;
+    left: -7px;
+    right: -7px;
+    bottom: 0;
+}
+
+.card-avatar{
+    margin-bottom: 20px;
+}
+
+.card-contents{
+    color: black;
+    text-align: left;
+    padding-left: 6px;
+}
+
+.card-contents ul{
+    list-style: disc;
+    list-style-position: inside;
+}
+
+.card-contents li{
+    font-size: 10px;
+    line-height: 157%;
+    color: black;
+}
+
+.card-contents li + li{
+    margin-top: 15px;
+}
+
+.card-contents-title{
+    font-family: "Georgia", serif;
+    font-size: 15.83px;
+    line-height: 157%;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.avatar{
+    text-align: center;
+}
+
+.avatar-image{
+    width: 57px;
+    height: 57px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.avatar-name{
+    font-size: 12px;
+    line-height: 157%;
+}
+
+
+@media (max-width: 1299px){
+    .product-sub-heading{
+        font-size: 40px;
+        line-height: 130%;
+    }
+
+    .product-heading{
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    .product-text{
+        font-size: 18px;
+    }
+
+    .images-container{
+        flex: 1 0 auto;
+        flex-basis: 50%;
+    }
+
+    .product-text + *{
+        margin-top: 30px;
+    }
+
+    .product{
+        padding-top: 60px;
+    }
+
+    .product-card{
+        position: relative;
+        z-index: 5;
+        margin-top: -10%;
+        display: flex;
+        justify-content: center;
+        max-width: 296px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (max-width: 991px){
+    .product-content{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .product-row{
+        flex-direction: column-reverse;
+    }
+
+    .product{
+        padding: 40px 10px 40px 10px;
+    }
+
+    .product-sub-heading{
+        font-size: 30px;
+        line-height: 130%;
+    }
+
+    .product-heading{
+        font-size: 18px;
+        line-height: 130%;
+    }
+
+    .product-text{
+        font-size: 16px;
+    }
+
+    .product-content{
+        margin-bottom: 40px;
+    }
+
+    .images-container{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .product-card{
+        position: relative;
+        z-index: 5;
+        margin-top: -20%;
+        display: flex;
+        justify-content: center;
+        max-width: 296px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width: 500px){
+    .product-card{
+        max-width: 270px;
+        margin: -30% 15px 0;
+    }
+    .product{
+        padding-bottom: 40px;
+    }
+
+    .product-card{
+        position: relative;
+        z-index: 5;
+        margin-top: -10%;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .card-contents-title{
+        font-family: "Georgia", serif;
+        font-size: 13.5px;
+        line-height: 157%;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+}

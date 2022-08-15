@@ -1,0 +1,138 @@
+.story{
+    background-color: #245852;
+    padding: 229px 0 176px;
+    color: white;
+}
+
+.story-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.story-content{
+    margin-right: 30px;
+    max-width: 580px;
+}
+
+.story-heading{
+    font-family: "Georgia", serif;
+    font-size: 50px;
+    line-height: 157%;
+    font-weight: 700;
+}
+
+.story-heading + *{
+    margin-top: 33px;
+}
+
+.story-text{
+    font-size: 25px;
+    line-height: 157%;
+}
+
+.story-text + *{
+    margin-top: 57px;
+}
+
+.story-btn{
+    display: flex;
+}
+
+.story-video{
+    max-width: 895px;
+    position: relative;
+}
+
+.story-video-object{
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+.story-video-overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 19px;
+    transition: opacity 0.2s ease;
+}
+
+.story-video-overlay.hidden{
+    opacity: 0;
+}
+
+.story-video-btn{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.story-video-btn, .story-video-btn img, .story-video-overlay{
+    z-index: 100;
+}
+
+.story-video-object{
+    max-width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+@media (max-width: 1199px){
+    .story-row{
+        flex-direction: column-reverse;
+    }
+
+    .story{
+        padding: 90px 0 90px;
+    }
+
+    .story-video{
+        margin-bottom: 40px;
+    }
+
+    .story-heading{
+        line-height: 130%;
+        font-size: 40px;
+    }
+
+    .story-text{
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    .story-text + *{
+        margin-top: 30px;
+    }
+
+    .story-heading + *{
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 991px){
+    .story{
+        padding-top: 60px 0 60px;
+    }
+
+    .story-heading{
+        line-height: 130%;
+        font-size: 30px;
+    }
+
+    .story-text{
+        font-size: 18px;
+        line-height: 130%;
+    }
+
+    .story-text + *{
+        margin-top: 25px;
+    }
+
+    .story-heading + *{
+        margin-top: 15px;
+    }
+}

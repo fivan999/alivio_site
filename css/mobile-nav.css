@@ -1,0 +1,44 @@
+.mobile-nav{
+    display: none;
+    padding: 40px 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+    background-color: rgba(255, 255, 255, 1);
+
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile-nav.active{
+    display: flex;
+}
+
+.mobile-nav-list  li + li{
+    margin-top: 20px;
+}
+
+.mobile-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 22px;
+}
+
+.mobile-login > * + *{
+    margin-left: 20px;
+}
+
+.mobile-nav a + a{
+    color: white;
+}
+
+.mobile-nav a.btn.btn-big{
+    margin-left: 0;
+    margin-top: 10px;
+}
